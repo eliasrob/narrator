@@ -3,6 +3,11 @@ import time
 from PIL import Image
 import numpy as np
 import os
+from dotenv import load_dotenv
+
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Folder
 folder = "frames"

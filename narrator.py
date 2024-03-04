@@ -6,8 +6,13 @@ import time
 import simpleaudio as sa
 import errno
 from elevenlabs import generate, play, set_api_key, voices
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 client = OpenAI()
+# OpenAI.api_key = os.getenv("OPENAI_API_KEY")
 
 set_api_key(os.environ.get("ELEVENLABS_API_KEY"))
 
